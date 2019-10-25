@@ -1,10 +1,9 @@
-[![HitCount](http://hits.dwyl.io/rbhatia46/React-Portfolio.svg)](http://hits.dwyl.io/rbhatia46/React-Portfolio)
-
+[![HitCount](http://hits.dwyl.io/caseyjardin/https://githubcom/caseyjardin/portfolio.svg)](http://hits.dwyl.io/caseyjardin/https://githubcom/caseyjardin/portfolio)
 
 A simple SPA Portfolio template for developer/designers built with React. Use it to showcase your work, testimonials and other information to clients.
 
 ## Preview
-![Preview](https://image.ibb.co/e5uBf0/Capture.png)
+![Preview](http://www.caseyjardin.com/caseyjardin-screen-capture.png)
 
 ## How to use
 1. Clone/Download the repo.
