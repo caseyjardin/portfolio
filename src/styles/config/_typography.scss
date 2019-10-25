@@ -1,0 +1,42 @@
+h1, h2, h3,
+h4, h5, h6 {
+  text-shadow: 0 1px 3px rgba($gunmetal, .8);
+  font-family: $font-secondary;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  a {
+    font-weight: inherit;
+  }
+}
+
+h1 {
+  margin-bottom: 1rem;
+  line-height: 72px;
+  font-size: 90px;
+}
+
+h2 {
+  margin-bottom: 26px;
+  line-height: 32px;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 36px;
+}
+
+h4 {
+  margin-bottom: 12px;
+  font-family: $font-primary;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}

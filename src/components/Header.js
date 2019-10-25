@@ -16,19 +16,17 @@ export default class Header extends Component {
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
           </ul>
         </nav>
+        
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {resumeData.name}.</h1>
-            <h3 style={{color: '#fff', fontFamily: 'sans-serif '}}>I am
-              a {resumeData.role}.{resumeData.roleDescription}
-            </h3>
-            <hr/>
-            <ul className="social">
+            <h3>I am a {resumeData.role}. {resumeData.roleDescription}</h3>
+            <ul className="mt-3 social">
               {
                 resumeData.socialLinks && resumeData.socialLinks.map(item => {
                   return (
                     <li key={item.name}>
-                      <a href={item.url} rel="noopener noreferrer" target="_blank"><i className={item.className}></i></a>
+                      <a href={item.url} rel="noopener noreferrer" target="_blank"><i className={item.className} /></a>
                     </li>
                   )
                   }
@@ -37,11 +35,13 @@ export default class Header extends Component {
             </ul>
           </div>
         </div>
+        
         <p className="scrolldown">
           <a className="smoothscroll" href="#about">
             <i className="fas fa-chevron-down"/>
           </a>
         </p>
+        
       </header>
     );
   }

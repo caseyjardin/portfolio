@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import image_frame from '../styles/images/polaroid.png';
 import profile_image from '../styles/images/profilepic.png';
 
 export default class About extends Component {
@@ -7,28 +6,32 @@ export default class About extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="about">
-        <div className="row">
-          {/* LEFT COLUMN */}
-          <div className="three columns">
-            <div className="profile-image">
-              {/*<img className="profile-image__frame" src={image_frame} alt="Casey Jardin"/>*/}
-              <img className="profile-image__background" src={profile_image} alt="Casey Jardin"/>
+        <div className="container">
+          <div className="row">
+            {/* LEFT COLUMN */}
+            <div className="col-lg-3">
+              <img src={profile_image} alt="Casey Jardin"/>
             </div>
-          </div>
-          {/* RIGHT COLUMN */}
-          <div className="nine columns main-col">
-            <h2>About Me</h2>
-            <p>{resumeData.aboutme}</p>
-            <div className="row">
-              <div className="columns contact-details">
-                <h2>Contact Details</h2>
-                <ul className="address">
-                  <li>{resumeData.name}</li>
-                  <li>{resumeData.address}</li>
-                  <li>{resumeData.email}</li>
-                </ul>
+            {/* RIGHT COLUMN */}
+            <div className="col-lg-9">
+              <h2>About Me</h2>
+              <p>{resumeData.aboutme}</p>
+              <h2>Contact Details</h2>
+              <ul className="address">
+                <li>{resumeData.name}</li>
+                <li>{resumeData.address}</li>
+                <li>{resumeData.email}</li>
+              </ul>
+              <div className="col-xs contact-details">
+                <a href="/" className="btn btn-block btn-lg btn-primary">
+                  <i className="fas fa-file-pdf"/>
+                  Generic Button
+                </a>
+                <a href="/" className="btn btn-block btn-lg btn-secondary">
+                  <i className="fas fa-file-pdf"/>
+                  Generic Button
+                </a>
               </div>
-              <a href="/" className="button"><i className="fas fa-file-pdf"/>Download CV</a>
             </div>
           </div>
         </div>

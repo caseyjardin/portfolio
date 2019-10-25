@@ -1,0 +1,12 @@
+.container {
+  width: 90%;
+  @include bp(sm) {
+    width: 75%;
+  }
+  @include bp(md) {
+    width: 50rem;
+  }
+  @include bp(lg) {
+    width: 60rem;
+  }
+}

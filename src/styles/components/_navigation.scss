@@ -1,0 +1,43 @@
+#nav-wrap {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  top: 0;
+  #nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 48px;
+    a {
+      transition: color .2s ease-in-out;
+      text-decoration: none;
+      padding: 0 1rem;
+    }
+    li.current a {
+      color: $macaroni;
+    }
+  }
+  // Mobile Hamburger Nav Icon
+  > .mobile-btn {
+    display: none;
+  }
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.opaque {
+  background-color: $quartz;
+}
+
+// TODO: Change hamburger icon

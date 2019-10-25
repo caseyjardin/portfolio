@@ -18,7 +18,7 @@
   opacity: 0.45;
   position: absolute;
   font-size: 80px;
-  font-family: Arial, Sans-Serif;
+  //font-family: Arial, Sans-Serif;
 }
 .pull-quote:before {
   content: "\201C";
@@ -39,7 +39,7 @@
 
 /* Abbreviations */
 abbr {
-  font-family: 'opensans-bold', sans-serif;
+  //font-family: 'opensans-bold', sans-serif;
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: .5px;
@@ -53,7 +53,7 @@ abbr:hover { cursor: help; }
   margin: 0;
   padding: 14px 6px 0 0;
   font-size: 84px;
-  font-family: /* Copperplate */ 'opensans-bold', sans-serif;
+  //font-family: /* Copperplate */ 'opensans-bold', sans-serif;
   line-height: 60px;
   text-indent: 0;
   background: transparent;

@@ -1,0 +1,30 @@
+@for $i from 1 through 12 {
+  .p-#{$i} {
+    padding:$baseline*$i (10px * $i);
+  }
+
+  .py-#{$i} {
+    padding-top:$baseline*$i;
+    padding-bottom:$baseline*$i;
+  }
+
+  .px-#{$i} {
+    padding:0 (10px * $i);
+  }
+
+  .pt-#{$i} {
+    padding-top:$baseline*$i;
+  }
+
+  .pb-#{$i} {
+    padding-bottom:$baseline*$i;
+  }
+
+  .pr-#{$i} {
+    padding-right:(10px * $i);
+  }
+
+  .pl-#{$i} {
+    padding-left:(10px * $i);
+  }
+}

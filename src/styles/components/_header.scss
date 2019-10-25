@@ -1,0 +1,88 @@
+// Fullscreen Background Header
+
+header {
+  background: $gunmetal url(../images/header-background.jpg) no-repeat top center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  height: 800px;
+  width: 100%;
+  .social {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    justify-content: space-evenly;
+    font-size: 30px;
+    display: flex;
+    li {
+      margin: 0 5px;
+    }
+    @include bp(sm) {
+      margin: 0 25%;
+    }
+    @include bp(lg) {
+      margin: 0 33%;
+    }
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: $macaroni;
+    }
+  }
+}
+
+.banner {
+  padding-bottom: 30px;
+  text-align: center;
+  width: 85%;
+  &-text {
+    h1 {
+      color: $white;
+      line-height: inherit;
+    }
+    // TODO: Make global h3 styles
+    h3 {
+      font-size: 18px;
+      text-transform: unset;
+      line-height: 1.5rem;
+      letter-spacing: 1.75px;
+      background-color: rgba($gunmetal,0.4);
+      border-radius: 5px;
+      margin: 0 auto;
+      color: $white;
+      padding: 24px;
+      width: 100%;
+      @include bp(md) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* header social links */
+
+/* scrolldown link */
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { color: #11ABB0; }
