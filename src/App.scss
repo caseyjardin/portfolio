@@ -1,0 +1,43 @@
+// LIB STYLES
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+// CONTAINER STYLES
+@import "styles/reset";
+@import 'styles/layout';
+
+
+//TOC:
+//a. Webfonts and Icon fonts
+//b. Reset
+//c. Default Styles
+//1. Basic
+//2. Typography
+//3. Links
+//4. Images
+//5. Buttons
+//6. Forms
+// d. Grid
+// e. Others
+//1. Clearing
+//2. Misc
+
+// COMPONENT SYLES
+@import 'styles/typography';
+@import 'styles/links';
+@import 'styles/images';
+@import 'styles/buttons';
+@import 'styles/forms';
+@import 'styles/grid';
+@import 'styles/utilities';
+@import 'styles/about';
+@import 'styles/contact';
+@import 'styles/cta';
+@import 'styles/footer';
+@import 'styles/header';
+@import 'styles/lists';
+@import 'styles/modal';
+@import 'styles/navigation';
+@import 'styles/portfolio';
+@import 'styles/resume';
+@import 'styles/skillbars';
+@import 'styles/responsive';

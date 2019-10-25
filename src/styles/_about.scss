@@ -1,0 +1,59 @@
+#about {
+  background: #2B2B2B;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  a {
+    color: #fff;
+    &:visited {
+      color: #fff;
+    }
+    &:hover,
+    &:focus {
+      color: #11ABB0;
+    }
+  }
+  h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  p {
+    line-height: 30px;
+    color: #7A7A7A;
+  }
+  .contact-details { width: 41.66667%; }
+
+
+
+  .button {
+    margin-top: 6px;
+    background: #444;
+    i {
+      margin-right: 15px;
+      font-size: 20px;
+    }
+    &:hover {
+      background: #fff;
+      color: #2B2B2B;
+    }
+  }
+  .main-col { padding-right: 5%; }
+}
+
+
+.profile-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  &__frame {
+    width: 100%;
+    position: absolute;
+  }
+  &__background {
+    width: 121px;
+    margin-top: -10px;
+  }
+}
