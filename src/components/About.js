@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import image_frame from '../styles/images/polaroid.png';
+import React, {Component} from 'react';
+// import image_frame from '../styles/images/polaroid.png';
 import profile_image from '../styles/images/profilepic.png';
 
 export default class About extends Component {
