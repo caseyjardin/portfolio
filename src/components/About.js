@@ -48,7 +48,7 @@ export default class About extends Component {
               </ul>
               
               <div className="col-xs contact-details">
-                <a href="/" className="btn btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-block btn-primary">
                   <i className="fas fa-file-pdf"/>
                   Download Resume
                 </a>

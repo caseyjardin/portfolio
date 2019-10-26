@@ -47,6 +47,7 @@
     li {
       width: 33%;
     }
+
     @include bp(md) {
       justify-content: space-between;
       li {
@@ -60,12 +61,18 @@
     align-items: center;
     position: relative;
     display: flex;
-    .cave-fox {
-      position: absolute;
-      border-radius: 0;
-      bottom: -9rem;
-      left: 50%;
+    width: 100%;
+    @include bp(md) {
+      margin: 0 auto;
+      width: 50%;
     }
+  }
+
+  .cave-fox {
+    position: absolute;
+    border-radius: 0;
+    bottom: -9rem;
+    left: 50%;
   }
 
 
