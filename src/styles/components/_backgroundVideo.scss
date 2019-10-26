@@ -46,7 +46,13 @@ body {
   line-height: 1.5;
   text-align: center;
 
-  :last-child { margin-bottom: 0; }
+  .video-caption {
+    display: none;
+    @include bp(lg) {
+      flex-direction: column;
+      display: flex;
+    }
+  }
 
   h1 {
     font-size: 14pt;
@@ -54,7 +60,6 @@ body {
     text-shadow: 0 0 .3em #000;
     margin: 0 0 1em;
   }
-
   p {
     font-size: 11pt;
     text-shadow: 0 0 .3em #000;
