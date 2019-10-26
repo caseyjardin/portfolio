@@ -1,5 +1,6 @@
 footer {
-  margin-bottom: 48px;
+  background: $gunmetal;
+  padding-bottom: 48px;
   text-align: center;
   position: relative;
   padding-top: 48px;
@@ -7,15 +8,15 @@ footer {
   /* link styles */
   a,
   a:visited {
-    color: $gunmetal;
+    color: $white;
   }
   a:hover,
   a:focus {
-    color: $quartz;
+    color: $blue;
   }
   /* social links */
   .social-links {
-    margin: 18px 0 30px 0;
+    //margin: 18px 0 30px 0;
     padding: 0;
     font-size: 30px;
     li {
@@ -59,7 +60,7 @@ footer {
   margin-left: -30px;
   a {
     transition: all 0.2s ease-in-out;
-    background-color: $quartz;
+    background-color: $blue;
     text-decoration: none;
     border-radius: 100%;
     line-height: 60px;
@@ -70,7 +71,10 @@ footer {
     width: 60px;
     color: #fff;
     &:hover {
-      background-color: $gunmetal;
+      background-color: $cambridge;
+      i {
+        color: $gunmetal;
+      }
     }
   }
 }

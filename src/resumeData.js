@@ -33,8 +33,8 @@ let resumeData = {
         }
       ],
     "aboutme":"Senior Frontend Engineer with more than 7+ years of experience building pixel perfect websites and digital signage. Highly adaptable to various working environments having positioned for startups, digital agencies, and fortune 500 companies. Passionate about UI development for client-side web apps. I'm eager to advance my career with a team of talented like-minded individuals who are passionate about collaboration, communication, and delivering high-quality products.",
-    "address":"Atlanta, GA USA",
-    "email":"caseyjardin@gmail.com",
+    "address":"Atlanta, GA",
+    "email":"caseyjardin@gmail",
     "freelance":[
       {
         "company":"Foxden Solutions",

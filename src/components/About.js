@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import profile_image from '../styles/images/profilepic.png';
+import fox from '../styles/images/fox.png';
 
 export default class About extends Component {
   render() {
@@ -16,24 +17,49 @@ export default class About extends Component {
             <div className="col-lg-9">
               <h2>About Me</h2>
               <p>{resumeData.aboutme}</p>
-              <h2>Contact Details</h2>
-              <ul className="address">
-                <li>{resumeData.name}</li>
-                <li>{resumeData.address}</li>
-                <li>{resumeData.email}</li>
+              <h2>Let's Be Friends!</h2>
+              
+              {/* CONTACT DETAILS */}
+              <ul className="contact-info">
+                <li>
+                  <a href="mailto:caseyjardin@gmail.com">
+                    <h3><i className="fab fa-google" /></h3>
+                    <p>gmail</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/12345678900" rel="noopener noreferrer" target="_blank">
+                    <h3><i className="fab fa-whatsapp" /></h3>
+                    <p>WhatsApp</p>
+                  </a>
+                </li>
+                <li>
+                  <h3><i className="fab fa-discord" /></h3>
+                  <p>ForFoxSake#7077</p>
+                </li>
+                <li>
+                  <h3><i className="fab fa-playstation" /></h3>
+                  <p>funkopoprox</p>
+                </li>
+                <li>
+                  <h3><i className="fab fa-battle-net" /></h3>
+                  <p>alpha1337#1197</p>
+                </li>
               </ul>
+              
               <div className="col-xs contact-details">
-                <a href="/" className="btn btn-block btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-primary">
                   <i className="fas fa-file-pdf"/>
-                  Generic Button
+                  Download Resume
                 </a>
-                <a href="/" className="btn btn-block btn-lg btn-secondary">
-                  <i className="fas fa-file-pdf"/>
-                  Generic Button
-                </a>
+                <img className='cave-fox' src={fox} alt="cave fox" />
               </div>
             </div>
           </div>
+  
+          
+          
+          {/*<div className="overlay" />*/}
         </div>
       </section>
     );

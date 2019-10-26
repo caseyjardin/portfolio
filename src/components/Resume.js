@@ -7,7 +7,7 @@ export default class Resume extends Component {
       <section id="resume">
         
         
-        <div className="row work">
+        <div className="work container">
           <div className="three columns header-col">
             <h1><span>Agency Life</span></h1>
           </div>
@@ -16,7 +16,7 @@ export default class Resume extends Component {
             {
               resumeData.work && resumeData.work.map((item, idx) => {
                 return (
-                  <div key={`work-${idx}`} className="row item">
+                  <div key={`work-${idx}`} className=" item">
                     <div className="twelve columns">
                       <h3>{item.company}</h3>
                       <p className="info">
@@ -57,7 +57,7 @@ export default class Resume extends Component {
         </div>
         
         {/* FREELANCE */}
-        <div className="row freelance">
+        <div className="freelance container">
           
           <div className="three columns header-col">
             <h1><span>Freelance</span></h1>
@@ -67,7 +67,7 @@ export default class Resume extends Component {
             {
               resumeData.freelance && resumeData.freelance.map((item) => {
                 return (
-                  <div className="row item">
+                  <div className=" item">
                     <div className="twelve columns">
                       <h3>{item.company}</h3>
                       <p className="info">
@@ -103,7 +103,7 @@ export default class Resume extends Component {
         </div>
         
         
-        <div className="row skill">
+        <div className="skill container">
           
           <div className="three columns header-col">
             <h1><span>Skills</span></h1>

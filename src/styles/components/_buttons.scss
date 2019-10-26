@@ -76,13 +76,13 @@ input[type="button"].btn-block {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
   &:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    color: $white;
+    background-color: $quartz;
+    border-color: $quartz;
   }
   &:focus,
   &.focus {
