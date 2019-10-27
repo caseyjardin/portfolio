@@ -3,49 +3,71 @@ import React, {Component} from 'react';
 const Work = (resumeData) => (
   <div className="work container">
     <div className="row">
-      <div className="col-lg-3">
-        <h1><span>Agency Life</span></h1>
+      <div className="col-xs-12 col-md-3">
+        <h2>Agency Life</h2>
       </div>
-      <div className="col-xs">
+      <div className="content col-xs">
         {
-          resumeData.work && resumeData.work.map((item, idx) => {
-            return (
-              <div key={`work-${idx}`} className=" item">
-                <div className="twelve columns">
-                  <h3>{item.company}</h3>
-                  <p className="info">
-                    {item.title}
-                    <span>&bull;</span>
-                    <em className="date">{item.startDate} &mdash; {item.endDate}</em>
-                  </p>
-                  <p>{item.description}</p>
-                  <ul className="achievements">
-                    {
-                      item.achievements && item.achievements.map((skill, idx) => {
-                        return (
-                          <li key={`skill-${idx}`} className="specialization"> {skill}</li>
-                        )
-                      })
-                    }
-                  </ul>
-            
-                  <p className="info">Specialization</p>
-            
-            
-                  <ul className="stack">
-                    {
-                      item.skills && item.skills.map((achievement, idx) => {
-                        return (
-                          <li key={`skill-${idx}`} className="specialization"><i
-                            className="far fa-check-square"/> {achievement}</li>
-                        )
-                      })
-                    }
-                  </ul>
+          resumeData.work.map((item, idx) => (
+            <div key={`work-${idx}`} className="item">
+              
+              {/* COMPANY NAME + TITLE */}
+              <div className="headline">
+                <p>{item.title}</p>
+                <h3>{item.company}</h3>
+              </div>
+              
+              <div className="body">
+                <div className="row">
+                  <div className="col-xs-7">
+                    
+                    {/* PRIMARY ROLE */}
+                    <p className="lead">Primary Role</p>
+                    <p>{item.description}</p>
+                    
+                    {/* SPECIALIZATION */}
+                    <p className="lead">Specialization</p>
+                    <ul className="stack">
+                      {
+                        item.skills && item.skills.map((achievement, idx) => {
+                          return (
+                            <li key={`skill-${idx}`} className="specialization"><i
+                              className="far fa-check-square"/> {achievement}</li>
+                          )
+                        })
+                      }
+                    </ul>
+                    
+                    {/* ACHIEVEMENTS */}
+                    <p className="lead">Achievements</p>
+                    <ul className="achievements">
+                      {
+                        item.achievements && item.achievements.map((skill, idx) => {
+                          return (
+                            <li key={`skill-${idx}`} className="specialization"> {skill}</li>
+                          )
+                        })
+                      }
+                    </ul>
+                    
+                  </div>
+                  
+                  {/* IMAGES COLUMN */}
+                  <div className="col-xs-5">
+                    <div className="images">
+                      <small>Michelin Tire Comparator Kiosk</small>
+                      <img src="images/portfolio/tire-compare/1.jpg" alt=""/>
+                      <img src="images/portfolio/tire-compare/2.jpg" alt=""/>
+                      <img src="images/portfolio/tire-compare/3.jpg" alt=""/>
+                      <img src="images/portfolio/tire-compare/4.jpg" alt=""/>
+                      <img src="images/portfolio/tire-compare/5.jpg" alt=""/>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
-            )
-          })
+            </div>
+          ))
         }
       </div>
     </div>
@@ -140,7 +162,7 @@ export default class Resume extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
-        <Work {...resumeData} />
+        { resumeData.work && <Work {...resumeData} /> }
         {/*<Freelance {...resumeData} />*/}
         {/*<Skills {...resumeData} />*/}
       </section>

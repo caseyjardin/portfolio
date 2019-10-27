@@ -24,10 +24,11 @@ h2 {
 h3 {
   font-family: $font-primary;
   text-transform: uppercase;
+  letter-spacing: 1.75px;
   font-weight: normal;
+  line-height: 1.5rem;
   margin-bottom: 8px;
-  line-height: 16px;
-  font-size: 36px;
+  font-size: 18px;
 }
 
 h4 {
