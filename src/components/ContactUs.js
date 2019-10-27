@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 export default class ContactUs extends Component {
   render() {
@@ -8,7 +8,8 @@ export default class ContactUs extends Component {
         <div className="video-container">
     
           <video autoPlay loop muted width="1280" height="720">
-            <source type="video/mp4" src="https://www.mbusa.com/vcm/MercedesMe/DigitalAssets/Homepage/UA-HOMEPAGE-HERO-VIDEO.mp4" />
+            <source type="video/mp4"
+                    src="http://www.caseyjardin.com/video-mercedes.mp4"/>
           </video>
     
           <div className="overlay">
@@ -17,12 +18,14 @@ export default class ContactUs extends Component {
               I’m open to full-time Front-End Engineering opportunities with a company who wants to improve the world!
               I am also available for freelance work. Click the icons below to get in touch!
             </p>
-            <div class="video-caption">
+            <div className="video-caption">
               <small>Like the background video? I helped create the app, and more!</small>
-              <small><i className="fas fa-link" /> <a href="https://www.mbusa.com/mercedesme/" rel="noopener noreferrer" target="_blank">mbusa.com</a> | Mercedes-Benz USA, LLC, Senior Developer</small>
+              <small><i className="fas fa-link"/> <a href="https://www.mbusa.com/mercedesme/"
+                                                     rel="noopener noreferrer" target="_blank">mbusa.com</a> |
+                Mercedes-Benz USA, LLC, Senior Developer
+              </small>
             </div>
           </div>
-  
         </div>
       </section>
     );

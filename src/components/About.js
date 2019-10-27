@@ -51,8 +51,8 @@ export default class About extends Component {
                 <a href="/" className="btn btn-lg btn-block btn-primary">
                   <i className="fas fa-file-pdf"/>
                   Download Resume
+                  <img className='cave-fox' src={fox} alt="cave fox" />
                 </a>
-                <img className='cave-fox' src={fox} alt="cave fox" />
               </div>
             </div>
           </div>

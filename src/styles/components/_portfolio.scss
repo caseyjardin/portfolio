@@ -1,4 +1,5 @@
 #portfolio {
+  position: relative;
   background: #ebeeee;
   padding-top: 90px;
   padding-bottom: 60px;
@@ -47,7 +48,7 @@
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 
-  background: url(../../src/styles/images/overlay-bg.png) repeat;
+  background: url(../images/overlay-bg.png) repeat;
 }
 .portfolio-item .item-wrap .link-icon {
   display: block;
