@@ -1,0 +1,28 @@
+.skillbar {
+  background-color: transparent !important;
+  margin-bottom: 8px !important;
+  &-bar {
+    //background-color: $blue !important;
+    //border-radius: 0 3px 3px 0 !important;
+  }
+  &-title {
+    font-size: 10px !important;
+    background-color: transparent !important;
+    color: $white !important;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    span {
+      padding: 8px 8px 8px 0 !important;
+      margin: 0;
+      line-height: 3px !important;
+      height: 0;
+      border: none;
+      background: transparent !important;
+    }
+  }
+  &-percent {
+    display: none;
+  }
+}

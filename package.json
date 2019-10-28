@@ -27,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2"
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "react-image-lightbox": "^5.1.0"
   }
 }

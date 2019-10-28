@@ -26,16 +26,17 @@ p {
   font-family: $font-primary;
 }
 
-// COLORS
-$white: #FBFCFB;
-$black: #000000;
+// PRIMARY
+$black:     #131313;
+$white:     #FBFCFB;
+// SECONDARY
+$gunmetal:  #2D253A;
+$quartz:    #564648;
 $cambridge: #A0B4B5;
-$macaroni: #F8C083;
-$red: #E4691B;
-$blue: #2875A3;
-$quartz: #564648;
-$gunmetal: #2D253A;
-
+// ACCENT
+$blue:      #2875A3;
+$orange:    #E4691B;
+$macaroni:  #F8C083;
 
 $btn-font-family: $font-primary;
 $btn-font-weight: $font-weight-normal;

@@ -1,4 +1,16 @@
 import React, {Component} from 'react';
+import SkillBar from 'react-skillbars';
+
+const colors = {
+  "bar": {
+    "hue": 202,
+    "saturation": 61,
+    "level": {
+      "minimum": 61,
+      "maximum": 20
+    }
+  },
+};
 
 const Work = (resumeData) => (
   <div className="work container">
@@ -19,7 +31,7 @@ const Work = (resumeData) => (
               
               <div className="body">
                 <div className="row">
-                  <div className="col-xs-7">
+                  <div className="col-xs-12 col-md-7">
                     
                     {/* PRIMARY ROLE */}
                     <p className="lead">Primary Role</p>
@@ -27,16 +39,7 @@ const Work = (resumeData) => (
                     
                     {/* SPECIALIZATION */}
                     <p className="lead">Specialization</p>
-                    <ul className="stack">
-                      {
-                        item.skills && item.skills.map((achievement, idx) => {
-                          return (
-                            <li key={`skill-${idx}`} className="specialization"><i
-                              className="far fa-check-square"/> {achievement}</li>
-                          )
-                        })
-                      }
-                    </ul>
+                    <SkillBar skills={item.skills} height={18} colors={colors} />
                     
                     {/* ACHIEVEMENTS */}
                     <p className="lead">Achievements</p>
@@ -44,7 +47,7 @@ const Work = (resumeData) => (
                       {
                         item.achievements && item.achievements.map((skill, idx) => {
                           return (
-                            <li key={`skill-${idx}`} className="specialization"> {skill}</li>
+                            <li key={`skill-${idx}`}><p>{skill}</p></li>
                           )
                         })
                       }
@@ -53,15 +56,15 @@ const Work = (resumeData) => (
                   </div>
                   
                   {/* IMAGES COLUMN */}
-                  <div className="col-xs-5">
-                    <div className="images">
-                      <small>Michelin Tire Comparator Kiosk</small>
-                      <img src="images/portfolio/tire-compare/1.jpg" alt=""/>
-                      <img src="images/portfolio/tire-compare/2.jpg" alt=""/>
-                      <img src="images/portfolio/tire-compare/3.jpg" alt=""/>
-                      <img src="images/portfolio/tire-compare/4.jpg" alt=""/>
-                      <img src="images/portfolio/tire-compare/5.jpg" alt=""/>
-                    </div>
+                  <div className="col-xs-12 col-md-5">
+                    <p className="lead">Sample Work</p>
+                    {
+                      item.samples && item.samples.map((img, idx) => {
+                        return (
+                          <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                        )
+                      })
+                    }
                   </div>
                   
                 </div>
@@ -76,84 +79,81 @@ const Work = (resumeData) => (
 
 const Freelance = (resumeData) => (
   <div className="freelance container">
-    
-    <div className="three columns header-col">
-      <h1><span>Freelance</span></h1>
-    </div>
-    
-    <div className="nine columns main-col">
-      {
-        resumeData.freelance && resumeData.freelance.map((item) => {
-          return (
-            <div className=" item">
-              <div className="twelve columns">
+    <div className="row">
+      <div className="col-xs-12 col-md-3">
+        <h2>Freelance</h2>
+      </div>
+      <div className="content col-xs">
+        {
+          resumeData.freelance.map((item, idx) => (
+            <div key={`work-${idx}`} className="item">
+              
+              {/* COMPANY NAME + TITLE */}
+              <div className="headline">
+                <p>{item.title}</p>
                 <h3>{item.company}</h3>
-                <p className="info">
-                  {item.title}
-                  <span>&bull;</span> <em className="date">{item.startDate} {item.endDate}</em></p>
-                <p>{item.description}</p>
-                <ul className="achievements">
-                  {
-                    item.achievements && item.achievements.map((skill, idx) => {
-                      return (
-                        <li key={`skill-${idx}`} className="specialization"><i
-                          className="far fa-check-square"/> {skill}</li>
-                      )
-                    })
-                  }
-                </ul>
-                <ul className="stack">
-                  {
-                    item.skills && item.skills.map((achievement, idx) => {
-                      return (
-                        <li key={`skill-${idx}`} className="specialization"><i
-                          className="far fa-check-square"/> {achievement}</li>
-                      )
-                    })
-                  }
-                </ul>
+              </div>
+              
+              <div className="body">
+                <div className="row">
+                  <div className="col-xs-12 col-md-7">
+                    
+                    {/* PRIMARY ROLE */}
+                    <p className="lead">Primary Role</p>
+                    <p>{item.description}</p>
+                    
+                    {/* SPECIALIZATION */}
+                    <p className="lead">Specialization</p>
+                    <SkillBar skills={item.skills} height={18} />
+                    
+                    
+                    {/*<ul className="stack">*/}
+                    {/*{*/}
+                    {/*item.skills && item.skills.map((achievement, idx) => {*/}
+                    {/*return (*/}
+                    {/*<li key={`skill-${idx}`} className="specialization"><i*/}
+                    {/*className="far fa-check-square"/> {achievement}</li>*/}
+                    {/*)*/}
+                    {/*})*/}
+                    {/*}*/}
+                    {/*</ul>*/}
+                    
+                    {/* ACHIEVEMENTS */}
+                    <p className="lead">Achievements</p>
+                    <ul className="achievements">
+                      {
+                        item.achievements && item.achievements.map((skill, idx) => {
+                          return (
+                            <li key={`skill-${idx}`}><p>{skill}</p></li>
+                          )
+                        })
+                      }
+                    </ul>
+                  
+                  </div>
+                  
+                  {/* IMAGES COLUMN */}
+                  <div className="col-xs-12 col-md-5">
+                    <p className="lead">Sample Work</p>
+                    
+                    <div className="images">
+                      {
+                        item.samples && item.samples.map((img, idx) => {
+                          return (
+                            <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                          )
+                        })
+                      }
+                    </div>
+                  </div>
+                
+                </div>
               </div>
             </div>
-          )
-        })
-      }
-    </div>
-  </div>
-);
-
-const Skills = (resumeData) => (
-  <div className="skill container">
-    
-    <div className="three columns header-col">
-      <h1><span>Skills</span></h1>
-    </div>
-    
-    <div className="nine columns main-col">
-      
-      <p>
-        {resumeData.skillsDescription}
-      </p>
-      
-      <div className="bars">
-        
-        <ul className="skills">
-          {
-            resumeData.skills && resumeData.skills.map((item, idx) => {
-              return (
-                <li key={`skill-${idx}`}>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                </li>
-              )
-            })
-          }
-        
-        </ul>
-      
+          ))
+        }
       </div>
-    
     </div>
-  
   </div>
 );
 
@@ -163,8 +163,7 @@ export default class Resume extends Component {
     return (
       <section id="resume">
         { resumeData.work && <Work {...resumeData} /> }
-        {/*<Freelance {...resumeData} />*/}
-        {/*<Skills {...resumeData} />*/}
+        <Freelance {...resumeData} />
       </section>
     );
   }

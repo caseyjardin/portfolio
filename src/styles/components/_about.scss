@@ -10,6 +10,10 @@
 
 
 #about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   background-image: url('../images/cave-background.png');
@@ -34,6 +38,7 @@
     flex-wrap: wrap;
     text-align: center;
     i {
+      font-size: 32px;
       color: $cambridge;
     }
     a {
