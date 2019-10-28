@@ -1,11 +1,12 @@
 let resumeData = {
-    "imagebaseurl":"https://images.wallpaperscraft.com/image/fox_asphalt_markup_129219_1920x1080.jpg",
     "name": "Casey Jardin",
-    "role": "JavaScript and Python Engineer",
-    "linkedinId":"caseyjardin",
-    "skypeid": "caseyjardin",
-    "roleDescription": " I am highly adaptable, I love learning new technologies and I am passionate about various parts of frontend development. I like to learn about backend methodologies by creating interactive community-driven Discord & Slack chat bots in my free time.",
-    "socialLinks":[
+    "email": "caseyjardin@gmail.com",
+    "header":{
+      "location":"Atlanta, GA",
+      "specialization": "JavaScript and Python Engineer",
+      "background":"images/header-background.jpg",
+      "introduction": "I am highly adaptable, I love learning new technologies and I am passionate about various parts of frontend development. I like to learn about backend methodologies by creating interactive community-driven Discord & Slack chat bots in my free time.",
+      "networks":[
         {
           "name":"linkedin",
           "url":"https://www.linkedin.com/in/caseyjardin",
@@ -32,9 +33,37 @@ let resumeData = {
           "className":"fab fa-twitter"
         }
       ],
-    "aboutme":"Senior Frontend Engineer with more than 7+ years of experience building pixel perfect websites and digital signage. Highly adaptable to various working environments having positioned for startups, digital agencies, and fortune 500 companies. Passionate about UI development for client-side web apps. I'm eager to advance my career with a team of talented like-minded individuals who are passionate about collaboration, communication, and delivering high-quality products.",
-    "address":"Atlanta, GA",
-    "email":"caseyjardin@gmail",
+    },
+    "about":{
+      "description":"Senior Frontend Engineer with more than 7+ years of experience building pixel perfect websites and digital signage. Highly adaptable to various working environments having positioned for startups, digital agencies, and fortune 500 companies. Passionate about UI development for client-side web apps. I'm eager to advance my career with a team of talented like-minded individuals who are passionate about collaboration, communication, and delivering high-quality products.",
+      "networks":[
+        {
+          "name":"gmail",
+          "url":"mailto:caseyjardin@gmail.com",
+          "icon":"fab fa-google"
+        },
+        {
+          "name":"whatsapp",
+          "url":"https://wa.me/12345678900",
+          "icon":"fab fa-whatsapp"
+        },
+        {
+          "name":"ForFoxSake#7077",
+          "url": null,
+          "icon":"fab fa-discord"
+        },
+        {
+          "name":"funkopoprox",
+          "url": null,
+          "icon":"fab fa-playstation"
+        },
+        {
+          "name":"alpha1337#1197",
+          "url": null,
+          "icon":"fab fa-battle-net"
+        },
+      ],
+    },
     "work":[
     {
       "company":"Black Airplane",

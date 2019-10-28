@@ -2,9 +2,17 @@ import React, {Component} from 'react';
 
 export default class Header extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    const {
+      background,
+      specialization,
+      introduction,
+      networks
+    } = this.props.resumeData.header;
+    const {
+      name
+    } = this.props.resumeData;
     return (
-      <header id="home">
+      <header id="home" style={{ backgroundImage: `url(${background})` }}>
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
           {/*<button className="mobile-btn" title="Hide navigation">Hide navigation</button>*/}
@@ -17,12 +25,12 @@ export default class Header extends Component {
         </nav>
         
         <div className="row banner">
-          <div className="banner-text">
-            <h1 className="responsive-headline">I am {resumeData.name}.</h1>
-            <h3>I am a {resumeData.role}. {resumeData.roleDescription}</h3>
+          <div className="banner-text container">
+            <h1 className="responsive-headline">I am {name}.</h1>
+            <h3>I am a {specialization}. {introduction}</h3>
             <ul className="mt-3 social">
               {
-                resumeData.socialLinks && resumeData.socialLinks.map(item => {
+                networks && networks.map(item => {
                   return (
                     <li key={item.name}>
                       <a href={item.url} rel="noopener noreferrer" target="_blank"><i className={item.className} /></a>

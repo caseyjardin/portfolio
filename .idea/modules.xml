@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/portfolio.iml" filepath="$PROJECT_DIR$/.idea/portfolio.iml" />
+      <module fileurl="file://$USER_HOME$/_BlackAirplane/wright-framework/.idea/wright-framework.iml" filepath="$USER_HOME$/_BlackAirplane/wright-framework/.idea/wright-framework.iml" />
     </modules>
   </component>
 </project>
