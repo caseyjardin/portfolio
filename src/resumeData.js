@@ -54,7 +54,7 @@ let resumeData = {
         {type: "JavaScript", level: 100},
         {type: "Squarespace", level: 100},
         {type: "Webpack", level: 100},
-        {type: "React Native", level: 80},
+        {type: "React", level: 80},
         {type: "SQL", level: 60},
         {type: "Vue", level: 60},
         {type: "PHP", level: 50},
@@ -92,6 +92,8 @@ let resumeData = {
           {type: "Chat Bot", level: 60},
           {type: "Webpack", level: 100},
           {type: "Electron", level: 50},
+          {type: "mongoDB", level: 50},
+          {type: "SQLite", level: 50},
         ],
         "samples":[
           "tire-compare/1.jpg",

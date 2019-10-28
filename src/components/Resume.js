@@ -39,7 +39,7 @@ const Work = (resumeData) => (
                     
                     {/* SPECIALIZATION */}
                     <p className="lead">Specialization</p>
-                    <SkillBar skills={item.skills} height={18} colors={colors} />
+                    <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
                     
                     {/* ACHIEVEMENTS */}
                     <p className="lead">Achievements</p>
@@ -104,7 +104,7 @@ const Freelance = (resumeData) => (
                     
                     {/* SPECIALIZATION */}
                     <p className="lead">Specialization</p>
-                    <SkillBar skills={item.skills} height={18} />
+                    <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
                     
                     
                     {/*<ul className="stack">*/}
