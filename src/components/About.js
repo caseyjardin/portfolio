@@ -22,30 +22,27 @@ export const About = props => {
             <p>{description}</p>
             <h2>Let's Be Friends!</h2>
             <ul className="contact-info">
-              {
-                networks && networks.map( item =>
-                  item.url !== null
-                  ? <li>
-                      <a href={item.url} rel="noopener noreferrer" target="_blank">
-                      <h3><i className={item.icon} /></h3>
-                      <p>{item.name}</p>
-                      </a>
-                    </li>
-                  : <li>
-                      <h3><i className={item.icon} /></h3>
-                      <p>{item.name}</p>
-                    </li>
-                )
-              }
+              { networks && networks.map( item => item.url !== null ?
+              // ICON WITH A LINK
+              <li>
+                <a href={item.url} rel="noopener noreferrer" target="_blank">
+                  <h3><i className={item.icon} /></h3>
+                  <p>{item.name}</p>
+                </a>
+              </li> :
+              // ICON WITHOUT A LINK
+              <li>
+                <h3><i className={item.icon} /></h3>
+                <p>{item.name}</p>
+              </li>
+              )}
             </ul>
-            {/* TODO: REFACTOR THIS */}
             <div className="col-xs contact-details">
               <a href="/" className="btn btn-lg btn-block btn-primary">
                 <i className="fas fa-file-pdf"/>
                 Download Resume
               </a>
             </div>
-            
           </div>
         </div>
       </div>
@@ -53,4 +50,8 @@ export const About = props => {
     </section>
   )
 };
+
+// TODO: refactor contact-details
+// TODO: Move cavefox to API
+// TODO: Make background dynamic from URL
 

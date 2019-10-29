@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import SkillBar from 'react-skillbars';
 
 const colors = {
@@ -22,51 +22,63 @@ const Work = (resumeData) => (
         {
           resumeData.work.map((item, idx) => (
             <div key={`work-${idx}`} className="item">
-              
-              {/* COMPANY NAME + TITLE */}
-              <div className="headline">
-                <p>{item.title}</p>
-                <h3>{item.company}</h3>
+              <div className="content__header">
+                <img className="content__logo" src={item.logo} alt={item.company} />
+                <div className="content__headline">
+                  <p>{item.title}</p>
+                  <h3>{item.company}</h3>
+                </div>
               </div>
-              
               <div className="body">
                 <div className="row">
-                  <div className="col-xs-12 col-md-7">
+                  <div className={`col-xs-12 ${item.samples ? "col-md-7" : "col-md-12" }`}>
                     
-                    {/* PRIMARY ROLE */}
-                    <p className="lead">Primary Role</p>
-                    <p>{item.description}</p>
+                    { item.description &&
+                      <Fragment>
+                        <ul className="description mb-5">{
+                          item.description.map( (data,idx) => <li>
+                            {
+                              item.description[idx]
+                            }
+                          </li> )
+                        }</ul>
+                      </Fragment>
+                    }
+  
+                    { item.skills &&
+                      <section className="skills mb-3">
+                        <p className="lead">Specialization</p>
+                        <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
+                      </section>
+                    }
                     
-                    {/* SPECIALIZATION */}
-                    <p className="lead">Specialization</p>
-                    <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
-                    
-                    {/* ACHIEVEMENTS */}
-                    <p className="lead">Achievements</p>
-                    <ul className="achievements">
-                      {
-                        item.achievements && item.achievements.map((skill, idx) => {
+                    { item.achievements &&
+                      <section className="achievements">
+                        <p className="lead">Achievements</p>
+                        <ul className="achievements">
+                          {
+                            item.achievements && item.achievements.map((skill, idx) => {
+                              return (
+                                <li key={`skill-${idx}`}><p>{skill}</p></li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </section>
+                    }
+                  </div>
+                  {/* IMAGES COLUMN */}
+                  { item.samples &&
+                    <div className="col-xs-12 col-md-5">
+                      <p className="lead">Sample Work</p>
+                      { item.samples.map((img, idx) => {
                           return (
-                            <li key={`skill-${idx}`}><p>{skill}</p></li>
+                            <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
                           )
                         })
                       }
-                    </ul>
-                    
-                  </div>
-                  
-                  {/* IMAGES COLUMN */}
-                  <div className="col-xs-12 col-md-5">
-                    <p className="lead">Sample Work</p>
-                    {
-                      item.samples && item.samples.map((img, idx) => {
-                        return (
-                          <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
-                        )
-                      })
-                    }
-                  </div>
-                  
+                    </div>
+                  }
                 </div>
               </div>
             </div>
@@ -87,36 +99,24 @@ const Freelance = (resumeData) => (
         {
           resumeData.freelance.map((item, idx) => (
             <div key={`work-${idx}`} className="item">
-              
-              {/* COMPANY NAME + TITLE */}
-              <div className="headline">
-                <p>{item.title}</p>
-                <h3>{item.company}</h3>
+              <div className="content__header">
+                <img className="content__logo" src={item.logo} alt={item.company} />
+                <div className="content__headline">
+                  <p>{item.title}</p>
+                  <h3>{item.company}</h3>
+                </div>
               </div>
-              
               <div className="body">
                 <div className="row">
                   <div className="col-xs-12 col-md-7">
-                    
                     {/* PRIMARY ROLE */}
-                    <p className="lead">Primary Role</p>
+                    {/*<p className="lead">Primary Role</p>*/}
                     <p>{item.description}</p>
                     
-                    {/* SPECIALIZATION */}
-                    <p className="lead">Specialization</p>
-                    <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
-                    
-                    
-                    {/*<ul className="stack">*/}
-                    {/*{*/}
-                    {/*item.skills && item.skills.map((achievement, idx) => {*/}
-                    {/*return (*/}
-                    {/*<li key={`skill-${idx}`} className="specialization"><i*/}
-                    {/*className="far fa-check-square"/> {achievement}</li>*/}
-                    {/*)*/}
-                    {/*})*/}
-                    {/*}*/}
-                    {/*</ul>*/}
+                    <section className="skills">
+                      <p className="lead">Specialization</p>
+                      <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
+                    </section>
                     
                     {/* ACHIEVEMENTS */}
                     <p className="lead">Achievements</p>
@@ -129,24 +129,19 @@ const Freelance = (resumeData) => (
                         })
                       }
                     </ul>
-                  
                   </div>
-                  
                   {/* IMAGES COLUMN */}
+                  { item.samples &&
                   <div className="col-xs-12 col-md-5">
                     <p className="lead">Sample Work</p>
-                    
-                    <div className="images">
-                      {
-                        item.samples && item.samples.map((img, idx) => {
-                          return (
-                            <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
-                          )
-                        })
-                      }
-                    </div>
+                    { item.samples.map((img, idx) => {
+                      return (
+                        <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                      )
+                    })
+                    }
                   </div>
-                
+                  }
                 </div>
               </div>
             </div>

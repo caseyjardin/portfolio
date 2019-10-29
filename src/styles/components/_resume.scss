@@ -22,44 +22,113 @@
     }
   }
 
-  .achievements {
-    list-style: disc;
-    padding-left: 16px;
+  section.achievements {
+    ul {
+      list-style: disc;
+      padding-left: 16px;
+      margin-bottom: 2rem;
+    }
   }
 
   .content {
     color: $white;
-    //border-radius: 5px;
-    //padding: 1rem;
-    //background-color: $white;
-    //box-shadow: $box-shadow;
-    //border: 1px solid $cambridge;
-    .headline {
-      text-align: center;
+    &__header {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      background: transparent;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      position: relative;
+      @include bp(md) {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+
+
+    ul.description {
+      padding: 1rem;
+      border-radius: 5px;
+      background: $gunmetal;
+      li {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    section.skills {
+      //margin: 24px 0;
+    }
+    &__logo {
+      z-index: 1;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+    &__headline {
+      display: flex;
+      flex-direction: column-reverse;
+      position: absolute;
+      left: 0;
+      width: 90%;
+      @include bp(md) {
+        position: unset;
+        flex-direction: column;
+        margin-left: 1rem;
+      }
       p {
-        color: $blue;
+        color: $white;
+        background: linear-gradient(
+          90deg,
+          rgba($blue,1) 50%,
+          rgba($blue,0) 100%
+        );
+        text-shadow: $text-shadow;
+        height: 24px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         font-size: 12px;
+        line-height: inherit;
+
+        padding-top: 4px;
+        padding-left: 8px;
         margin-bottom: 0;
         text-transform: uppercase;
+        @include bp(md) {
+          background: transparent;
+          padding-left: 0;
+        }
       }
       h3 {
         color: $orange;
         font-weight: bold;
         margin-bottom: 0;
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 25%;
       }
-      @include bp(md) {
-        text-align: left;
+    }
+
+    .item {
+      margin: 24px 0 0;
+      &:first-of-type {
+        margin-top: 0;
       }
     }
     .body {
       p {
         font-size: 14px;
         font-weight: normal;
+        margin: 0;
         &.lead {
           font-size: 28px;
           font-family: $font-secondary;
           line-height: 22px;
-          margin: 1rem 0;
+          margin-bottom: 1rem;
           &:after {
             content: '';
             display: block;
@@ -77,78 +146,5 @@
         }
       }
     }
-
-
-
-
   }
-
-
 }
-
-//#resume {
-//  background: #fff;
-//  padding-top: 90px;
-//  padding-bottom: 72px;
-//  overflow: hidden;
-//  p {
-//    line-height: 18px;
-//    margin-bottom: 0;
-//  }
-//  h3 {
-//    font: 25px/30px 'opensans-bold', sans-serif;
-//    margin-bottom: 0;
-//  }
-//  .info {
-//    font: 16px/24px 'librebaskerville-italic', serif;
-//    color: #6E7881;
-//    margin: 8px 0;
-//    font-weight: bold;
-//    span {
-//      margin-right: 5px;
-//      margin-left: 5px;
-//    }
-//  }
-//  .date {
-//    font-style: italic;
-//    font: 14px;
-//    line-height: 24px;
-//    margin-top: 6px;
-//  }
-//}
-//
-//#resume a, #resume a:visited  { color: #11ABB0; }
-//#resume a:hover, #resume a:focus { color: #313131; }
-//
-//#resume h1 {
-//  font: 18px/24px 'opensans-bold', sans-serif;
-//  text-transform: uppercase;
-//  letter-spacing: 1px;
-//}
-//#resume h1 span {
-//  border-bottom: 3px solid #11ABB0;
-//  padding-bottom: 6px;
-//}
-//
-//
-////#resume .header-col { padding-top: 9px; }
-//#resume .main-col { padding-right: 10%; }
-//
-//.freelance, .work {
-//  margin-bottom: 48px;
-//  padding-bottom: 24px;
-//  border-bottom: 1px solid #E8E8E8;
-//}
-//
-//#resume .achievements {
-//  list-style: disc;
-//  padding-left: 16px;
-//}
-//
-//#resume .stack {
-//  display: flex;
-//  flex-wrap: wrap;
-//  .specialization {
-//    width: 25%;
-//  }
-//}
