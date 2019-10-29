@@ -2,20 +2,19 @@ import React, {Component} from 'react';
 
 export default class Footer extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    const { networks } = this.props.resumeData.header;
     return (
       <footer>
-        <ul className="social-links">
+        <ul className="mt-3 social-links">
           {
-            resumeData.socialLinks && resumeData.socialLinks.map((item, idx) => {
-              return (
-                <li key={`link-${idx}`}>
-                  <a href="/">
-                    <i className={item.className}/>
-                  </a>
-                </li>
-              )
-            })
+            networks && networks.map(item => {
+                return (
+                  <li key={item.name}>
+                    <a href={item.url} rel="noopener noreferrer" target="_blank"><i className={item.className} /></a>
+                  </li>
+                )
+              }
+            )
           }
         </ul>
         {/*<ul className="copyright">*/}
