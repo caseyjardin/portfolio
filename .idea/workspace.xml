@@ -2,26 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d919877-ab77-4ce1-ac7e-323c6cf96e50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/logo/bfgoodrich.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo/bloomin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo/collins.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo/freight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo/merton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo/superioressex.png" afterDir="false" />
       <change beforePath="$USER_HOME$/_BlackAirplane/wright-framework/package.json" beforeDir="false" afterPath="$USER_HOME$/_BlackAirplane/wright-framework/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/aig.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/aig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/bloomin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/kefi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/kefi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/michelin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/michelin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/superior-essex.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/superior-essex.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/portfolio/aig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/portfolio/bloomin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/portfolio/kefi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/portfolio/michelin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/portfolio/superior-essex.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.8a56603791104f1e90d2be645b5e5344.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.216de8f0.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.216de8f0.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.eb51369f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.eb51369f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/header-background.b87f9265.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Resume.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resumeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resumeData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_resume.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_resume.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/config/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/config/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/util/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/util/_lists.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +35,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+            <state relative-caret-position="1087">
+              <caret line="122" column="52" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ContactUs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Portfolio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -56,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/styles/config/_reset.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
-              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -87,15 +118,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resumeData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="274" column="36" selection-start-line="274" selection-start-column="36" selection-end-line="274" selection-end-column="36" />
+            <state relative-caret-position="506">
+              <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
               <folding>
                 <element signature="e#128#1254#0" />
                 <element signature="e#1036#1755#0" />
                 <element signature="e#1270#1772#0" />
                 <element signature="e#3114#3793#0" />
                 <element signature="e#3758#4406#0" />
-                <element signature="e#4892#5550#0" />
                 <element signature="e#6302#6953#0" />
                 <element signature="e#6959#7655#0" />
                 <element signature="e#7670#8370#0" />
@@ -120,7 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>responsive-headline</find>
       <find>under</find>
       <find>font-fami</find>
       <find>h5</find>
@@ -148,8 +177,9 @@
       <find>email</find>
       <find>headline</find>
       <find>ul</find>
-      <find>league</find>
       <find>lead</find>
+      <find>colors</find>
+      <find>league</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -191,8 +221,6 @@
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_footer.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/_contact.scss" />
-        <option value="$PROJECT_DIR$/src/components/Portfolio.js" />
-        <option value="$PROJECT_DIR$/src/components/ContactUs.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_portfolio.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/_backgroundVideo.scss" />
         <option value="$PROJECT_DIR$/src/styles/config/_typography.scss" />
@@ -204,13 +232,15 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_header.scss" />
         <option value="$PROJECT_DIR$/src/components/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/About.js" />
         <option value="$PROJECT_DIR$/src/styles/config/_variables.scss" />
         <option value="$PROJECT_DIR$/src/styles/config/_reset.scss" />
         <option value="$PROJECT_DIR$/src/styles/_reset.scss" />
         <option value="$PROJECT_DIR$/src/styles/util/_lists.scss" />
-        <option value="$PROJECT_DIR$/src/components/Resume.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_resume.scss" />
+        <option value="$PROJECT_DIR$/src/components/About.js" />
+        <option value="$PROJECT_DIR$/src/components/Resume.js" />
+        <option value="$PROJECT_DIR$/src/components/ContactUs.js" />
+        <option value="$PROJECT_DIR$/src/components/Portfolio.js" />
         <option value="$PROJECT_DIR$/src/resumeData.js" />
       </list>
     </option>
@@ -241,6 +271,19 @@
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,6 +305,14 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="bloomin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -362,18 +413,18 @@
       <workItem from="1572014137345" duration="43854000" />
       <workItem from="1572079202581" duration="15785000" />
       <workItem from="1572276644879" duration="1466000" />
-      <workItem from="1572284813495" duration="20025000" />
+      <workItem from="1572284813495" duration="24991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81130000" />
+    <option name="totallyTimeSpent" value="86096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25396827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25396827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -490,24 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="21" selection-start-line="27" selection-start-column="11" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/_contact.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ContactUs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -648,16 +685,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/portfolio/michelin.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/logo/michelin.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -671,7 +698,7 @@
     <entry file="file://$PROJECT_DIR$/src/styles/config/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -692,16 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Resume.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/_resume.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -709,17 +726,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ContactUs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Portfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Resume.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="122" column="52" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resumeData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="274" column="36" selection-start-line="274" selection-start-column="36" selection-end-line="274" selection-end-column="36" />
+        <state relative-caret-position="506">
+          <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
           <folding>
             <element signature="e#128#1254#0" />
             <element signature="e#1036#1755#0" />
             <element signature="e#1270#1772#0" />
             <element signature="e#3114#3793#0" />
             <element signature="e#3758#4406#0" />
-            <element signature="e#4892#5550#0" />
             <element signature="e#6302#6953#0" />
             <element signature="e#6959#7655#0" />
             <element signature="e#7670#8370#0" />

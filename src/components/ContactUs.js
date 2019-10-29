@@ -1,17 +1,14 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
 export default class ContactUs extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <section id="contact">
         <div className="video-container">
-    
           <video autoPlay loop muted width="1280" height="720">
             <source type="video/mp4"
                     src="http://www.caseyjardin.com/video-mercedes.mp4"/>
           </video>
-    
           <div className="overlay">
             <h2>Let’s Create Something Amazing!</h2>
             <p>

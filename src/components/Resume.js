@@ -36,7 +36,7 @@ const Work = (resumeData) => (
                     { item.description &&
                       <Fragment>
                         <ul className="description mb-5">{
-                          item.description.map( (data,idx) => <li>
+                          item.description.map( (data,idx) => <li key={`description-${idx}`}>
                             {
                               item.description[idx]
                             }
@@ -67,7 +67,7 @@ const Work = (resumeData) => (
                       </section>
                     }
                   </div>
-                  {/* IMAGES COLUMN */}
+                  
                   { item.samples &&
                     <div className="col-xs-12 col-md-5">
                       <p className="lead">Sample Work</p>
@@ -79,6 +79,7 @@ const Work = (resumeData) => (
                       }
                     </div>
                   }
+                  
                 </div>
               </div>
             </div>
@@ -108,40 +109,54 @@ const Freelance = (resumeData) => (
               </div>
               <div className="body">
                 <div className="row">
-                  <div className="col-xs-12 col-md-7">
-                    {/* PRIMARY ROLE */}
-                    {/*<p className="lead">Primary Role</p>*/}
-                    <p>{item.description}</p>
-                    
-                    <section className="skills">
-                      <p className="lead">Specialization</p>
-                      <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
-                    </section>
-                    
-                    {/* ACHIEVEMENTS */}
-                    <p className="lead">Achievements</p>
-                    <ul className="achievements">
-                      {
-                        item.achievements && item.achievements.map((skill, idx) => {
-                          return (
-                            <li key={`skill-${idx}`}><p>{skill}</p></li>
-                          )
-                        })
-                      }
-                    </ul>
-                  </div>
-                  {/* IMAGES COLUMN */}
-                  { item.samples &&
-                  <div className="col-xs-12 col-md-5">
-                    <p className="lead">Sample Work</p>
-                    { item.samples.map((img, idx) => {
-                      return (
-                        <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
-                      )
-                    })
+                  <div className="col-xs-12">
+                    { item.description &&
+                      <ul className="description mb-5">{
+                        item.description.map( (data,idx) => <li key={`description-${idx}`}>
+                          {
+                            item.description[idx]
+                          }
+                        </li> )
+                      }</ul>
                     }
                   </div>
+                  <div className="col-xs-12 col-md-7">
+  
+                    { item.skills &&
+                      <section className="skills mb-3">
+                        <p className="lead">Specialization</p>
+                        <SkillBar skills={item.skills} height={18} colors={colors} animationDelay={250} animationDuration={1000} />
+                      </section>
+                    }
+  
+                    { item.achievements &&
+                    <section className="achievements">
+                      <p className="lead">Achievements</p>
+                      <ul className="achievements">
+                        {
+                          item.achievements && item.achievements.map((skill, idx) => {
+                            return (
+                              <li key={`skill-${idx}`}><p>{skill}</p></li>
+                            )
+                          })
+                        }
+                      </ul>
+                    </section>
+                    }
+                  </div>
+                  
+                  { item.samples &&
+                    <div className="col-xs-12 col-md-5">
+                      <p className="lead">Sample Work</p>
+                      { item.samples.map((img, idx) => {
+                        return (
+                          <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                        )
+                      })
+                      }
+                    </div>
                   }
+                  
                 </div>
               </div>
             </div>

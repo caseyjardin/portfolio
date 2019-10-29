@@ -22,16 +22,16 @@ export const About = props => {
             <p>{description}</p>
             <h2>Let's Be Friends!</h2>
             <ul className="contact-info">
-              { networks && networks.map( item => item.url !== null ?
+              { networks && networks.map( (item, idx) => item.url !== null ?
               // ICON WITH A LINK
-              <li>
+              <li key={`item-${idx}`}>
                 <a href={item.url} rel="noopener noreferrer" target="_blank">
                   <h3><i className={item.icon} /></h3>
                   <p>{item.name}</p>
                 </a>
               </li> :
               // ICON WITHOUT A LINK
-              <li>
+              <li key={`item-${idx}`}>
                 <h3><i className={item.icon} /></h3>
                 <p>{item.name}</p>
               </li>
