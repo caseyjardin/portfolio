@@ -65,6 +65,7 @@ let resumeData = {
     },
     {
       "company":"Kefi",
+      "url": "http://www.playkefi.com",
       "logo": "./images/logo/kefi.png",
       "title":"Black Airplane",
       "description": null,
@@ -91,6 +92,7 @@ let resumeData = {
     },
     {
       "company":"Superior Essex",
+      "url": "http://www.superioressex.com",
       "logo": "./images/logo/superioressex.png",
       "title":"Black Airplane",
       "description": null,
@@ -125,6 +127,7 @@ let resumeData = {
     },
     {
       "company":"Bloomin' Brands",
+      "url": "outback.com",
       "logo": "./images/logo/bloomin.png",
       "title":"Arke Systems",
       "description": null,
@@ -174,12 +177,14 @@ let resumeData = {
     },
     {
       "company":"Mercedes-Benz",
+      "url": "http://www.mbusa.com/mercedesme",
       "logo": "./images/logo/mercedes.png",
       "title":"Publicis Sapient",
       "description": "",
       "achievements":[
         "Developed responsive templates and re-usable components for multiple features within the Mercedes me environment which are still in use today. Some of these features include profile management, technical documentation, warranty simulators and even an application to remote start the registered vehicle via web using a custom API provided by the client.",
         "Created and maintained server-side store procedures to act as a middleware to parse, manipulate and filter data before being delivered to the client-side application state.",
+        "Each visitors experience is unique based on conditional data from the registered cars in their profile.",
         "Manage pull requests, code reviews and merging prior to deployment.",
         "Awarded top 3 in JD Power Manufacturer Website Evaluation Study.",
         "Yearly visits have more than doubled, rising over 117% since redesign.",
@@ -193,13 +198,15 @@ let resumeData = {
         {type: "Webpack", level: 20},
       ],
       "samples":[
-        "mercedes.jpeg"
+        "mercedes/mercedes-1.png",
+        "mercedes/mercedes-2.png"
       ],
       "startDate": null,
       "endDate": null,
     },
     {
         "company":"Southern Glazers",
+        "url": "http://www.southernglazers.com",
         "logo": "./images/logo/southernglazers.png",
         "title":"Publicis Sapient",
         "description": "",
@@ -223,7 +230,8 @@ let resumeData = {
         "endDate": null,
       },
     {
-      "company":"B.F. Goodrich",
+      "company":"B.F. Goodrich Garage",
+      "url": "http://www.garage.bfgoodrichtires.com",
       "logo": "./images/logo/bfgoodrich.png",
       "title":"Publicis Sapient",
       "description": "",
@@ -248,6 +256,7 @@ let resumeData = {
     },
     {
       "company":"AIG / Valic",
+      "url": "http://www.valic.com",
       "logo": "./images/logo/valic.png",
       "title":"Publicis Sapient",
       "description": "",
@@ -261,7 +270,9 @@ let resumeData = {
       "skills":[
         {type: "HTML5 / CSS3", level: 100},
         {type: "JavaScript", level: 100},
-        {type: "Webpack", level: 100},
+        {type: "TypeScript", level: 90},
+        {type: "Architecture", level: 70},
+        {type: "Documentation", level: 60},
       ],
       "samples": [
         "mercedes.jpeg",

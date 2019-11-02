@@ -38,7 +38,7 @@ export const About = props => {
               {/*)}*/}
             {/*</ul>*/}
             <div className="col-xs contact-details">
-              <a href="/" className="btn btn-lg btn-block btn-primary">
+              <a href="http://www.caseyjardin.com/resume_casey-jardin.pdf" rel="noopener noreferrer" target="_blank" className="btn btn-lg btn-block btn-primary">
                 <i className="fas fa-file-pdf"/>
                 Download Resume
               </a>
