@@ -22,6 +22,10 @@
   padding-bottom: 66px;
   background-size: cover;
   background-repeat: no-repeat;
+
+  text-align: center;
+
+
   img {
     width: 200px;
     border-radius: 50%;
@@ -34,7 +38,7 @@
   }
   .contact-info {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     i {
@@ -54,7 +58,7 @@
     }
 
     @include bp(md) {
-      justify-content: space-between;
+      justify-content: space-evenly;
       li {
         width: auto;
       }

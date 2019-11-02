@@ -15,28 +15,28 @@ export const About = props => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <img src={profile_image} alt={name}/>
+            <img src={profile_image} alt={name} className="hidden-xs" />
           </div>
           <div className="col-lg-9">
             <h2>About Me</h2>
             <p>{description}</p>
-            <h2>Let's Be Friends!</h2>
-            <ul className="contact-info">
-              { networks && networks.map( (item, idx) => item.url !== null ?
-              // ICON WITH A LINK
-              <li key={`item-${idx}`}>
-                <a href={item.url} rel="noopener noreferrer" target="_blank">
-                  <h3><i className={item.icon} /></h3>
-                  <p>{item.name}</p>
-                </a>
-              </li> :
-              // ICON WITHOUT A LINK
-              <li key={`item-${idx}`}>
-                <h3><i className={item.icon} /></h3>
-                <p>{item.name}</p>
-              </li>
-              )}
-            </ul>
+            {/*<h2>Let's Be Friends!</h2>*/}
+            {/*<ul className="contact-info">*/}
+              {/*{ networks && networks.map( (item, idx) => item.url !== null ?*/}
+              {/*// ICON WITH A LINK*/}
+              {/*<li key={`item-${idx}`}>*/}
+                {/*<a href={item.url} rel="noopener noreferrer" target="_blank">*/}
+                  {/*<h3><i className={item.icon} /></h3>*/}
+                  {/*<p>{item.name}</p>*/}
+                {/*</a>*/}
+              {/*</li> :*/}
+              {/*// ICON WITHOUT A LINK*/}
+              {/*<li key={`item-${idx}`}>*/}
+                {/*<h3><i className={item.icon} /></h3>*/}
+                {/*<p>{item.name}</p>*/}
+              {/*</li>*/}
+              {/*)}*/}
+            {/*</ul>*/}
             <div className="col-xs contact-details">
               <a href="/" className="btn btn-lg btn-block btn-primary">
                 <i className="fas fa-file-pdf"/>

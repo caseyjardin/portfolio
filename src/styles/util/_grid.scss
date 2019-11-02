@@ -10,3 +10,18 @@
     width: 60rem;
   }
 }
+
+.hidden-xs {
+  @media only screen and (max-width: 48em) {
+    display: none;
+  }
+  @media only screen and (min-width: 48em) {
+    display: block;
+  }
+}
+
+.hidden-mobile {
+  @media only screen and (max-width: 62em) {
+    display: none;
+  }
+}

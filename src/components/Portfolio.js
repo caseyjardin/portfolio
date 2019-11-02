@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 export default class Porfolio extends Component {
   render() {
     return (
-      <section id="aig">
+      <section id="aig" className="hidden-mobile">
+        
         <div className="video-container">
           <video autoPlay loop muted width="1280" height="720">
             <source type="video/mp4" src="http://www.caseyjardin.com/video-aig.mp4"/>

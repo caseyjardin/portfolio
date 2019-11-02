@@ -1,5 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import SkillBar from 'react-skillbars';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const colors = {
   "bar": {
@@ -71,12 +73,16 @@ const Work = (resumeData) => (
                   { item.samples &&
                     <div className="col-xs-12 col-md-5">
                       <p className="lead">Sample Work</p>
-                      { item.samples.map((img, idx) => {
+                      <Carousel showThumbs={true} showIndicators={false} dynamicHeight emulateTouch infiniteLoop autoPlay>
+                        { item.samples.map((img, idx) => {
                           return (
-                            <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                            <div>
+                              <img key={`img-${idx}`} src={`images/portfolio/${img}`} className="mb-1" alt={img}/>
+                            </div>
                           )
                         })
-                      }
+                        }
+                      </Carousel>
                     </div>
                   }
                   
@@ -173,7 +179,7 @@ export default class Resume extends Component {
     return (
       <section id="resume">
         { resumeData.work && <Work {...resumeData} /> }
-        <Freelance {...resumeData} />
+        {/*<Freelance {...resumeData} />*/}
       </section>
     );
   }
