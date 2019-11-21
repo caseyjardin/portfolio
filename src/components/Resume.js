@@ -75,7 +75,7 @@ const Work = (resumeData) => (
                       <p className="lead">Live Demo</p>
                       <a href={item.url} className="btn btn-sm btn-block btn-secondary"><i className="fas fa-external-link-alt" />Open In New Tab</a>
                       <p className="lead mt-3">Screenshots</p>
-                      <Carousel showThumbs={true} showIndicators={false} emulateTouch infiniteLoop autoPlay>
+                      <Carousel showThumbs={true} showIndicators={false} emulateTouch infiniteLoop autoPlay dynamicHeight>
                         { item.samples.map((img, idx) => {
                           return (
                             <div>
